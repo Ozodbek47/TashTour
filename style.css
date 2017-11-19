@@ -57,7 +57,7 @@ li{
 font-family: arial;
 }
 
-img{
+img.avatar{
   box-shadow: 2px 2px 50px 5px grey;
   border-radius: 30px;
 }
