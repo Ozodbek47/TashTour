@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<title>Accommodation</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+
+<head>
+
+<style>
+
+.navbar {
+	margin-bottom: 0;
+	border-radius: 0;
+}
+
+/* Add a gray background color and some padding to the footer */
+footer {
+	background-color: #f2f2f2;
+	padding: 25px;
+}
+
+.affix {
+top: 0;
+width: 100%;
+z-index: 9999 !important;
+}
+
+.affix + .container-fluid {
+padding-top: 70px;
+}
+
+a{text-decoration: none; color: black;}
+
+.hotel-container{content:"";display:table;clear:both}
+
+.hotel-content{margin-left:auto;margin-right:auto; max-width:980px}
+.hotel-topleft{position:absolute;left:0;top:0}
+.hotel-white-text{color:#fff}
+.hotel-grey-text{color:#757575}
+
+.hotel-button{color:#fff;background-color:#000; padding:8px 16px; overflow:hidden; text-decoration:none;text-align:center;}
+.hotel-button:hover{color:#000;background-color:#ccc}
+.text-to-disappear{}
+@media screen and (max-width: 580px)
+{
+.hotel-button{
+	visibility: hidden;
+}
+
+.text-to-disappear{
+	visibility: hidden;
+}
+}
+
+.hotel-row{content:""; display:table; clear:both}
+.image-grayscale{filter:grayscale(20%)}
+
+.hotel-col{float:left; width:100%}
+.image-width{width:25%}
+
+
+</style>
+
+
+</head>
+
+<body>
+
+	<nav class="navbar navbar-default" data-spy="affix" data-offset-top="1" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="index.html">TashTour</a>
+	    </div>
+	    <div class="collapse navbar-collapse" id="myNavbar">
+	      <ul class="nav navbar-nav">
+	        <li><a href="index.html">Home</a></li>
+	        <li class="active"><a href="#">Accommodations</a></li>
+	        <li class="dropdown">
+	        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Entertainment
+	        <span class="caret"></span></a>
+	        <ul class="dropdown-menu">
+            <li><a href="_museum.html">Museums</a></li>
+            <li><a href="_park.html">Parks</a></li>
+            <li><a href="_shop.html">Shops</a></li>
+	        </ul>
+	      </li>
+	      <li class="dropdown">
+	      <a class="dropdown-toggle" data-toggle="dropdown" href="#">Restaurants & Cafes
+	      <span class="caret"></span></a>
+	      <ul class="dropdown-menu">
+		<li><a href="National.html">National</a></li>
+        <li><a href="FastFood.html">Fast Food</a></li>
+        <li><a href="CoffeeShop.html">Coffee Shops</a></li>
+        <li><a href="OR.html">Other</a></li>
+	      </ul>
+	    </li>
+	    <li class="dropdown">
+	    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Transport
+	    <span class="caret"></span></a>
+	    <ul class="dropdown-menu">
+      <li><a href="_bus.html">Bus</a></li>
+      <li><a href="_taxi.html">Taxi</a></li>
+      <li><a href="_sub.html">Underground</a></li>
+      <li><a href="_rail.html">Rail</a></li>
+      <li><a href="_air.html">Air</a></li>
+	    </ul>
+	  </li>
+	        <li><a href="_tip.html">Useful Tips</a></li>
+	      </ul>
+	      <div class="nav navbar-nav navbar-right">
+	        <a href="Travelers Quiz.html" target="_blank"><button class="btn btn-primary navbar-btn"><b>Travel Personality Quiz</b></button></a>
+	      </div>
+	    </div>
+	  </div>
+	</nav>
+
+<div class="hotel-main hotel-content" style="max-width:1200px; font-family: Montserrat;">
+
+  <div style="display:none; margin-top:83px"></div>
+
+  <!-- Top Heading -->
+  <header class="hotel-container" style="font-size:24px">
+    <br><p style="float: left">Accommodations</p>
+  </header>
+
+  <!-- Image Header -->
+
+  <div class="hotel-container" style="position:relative">
+    <img src="hotelmainphoto.jpg" alt="Hotel" style="width:100%">
+    <div class="hotel-topleft hotel-white-text" style="padding:14px 48px">
+      <h1  style="font-size: 64px">Tashkent City</p>
+      <h1 class="text-to-disappear">THE BEST HOTELS</h1>
+      <p><a href="#allhotels" class="hotel-button" style="font-size:18px; padding:12px 24px;">CHOOSE ONE</a></p>
+    </div>
+  </div>
+
+  <div class="hotel-container hotel-grey-text" id="allhotels">
+    <p>All Hotels</p>
+  </div>
+
+  <!-- Hotels Grid -->
+
+  <div class="hotel-row image-grayscale">
+    <div class="hotel-col image-width">
+      <div class="hotel-container">
+        <a href="Hotel1.html" style="text-decoration: none;"><img src="Hotelphotos/International Hotel Tashkent1.jpg" style="width: 95%">
+        <p>International Hotel<br><b>Starting from $25</b></p></a>
+      </div>
+      <div class="hotel-container">
+        <img src="Hotelphotos/City Palace Hotel1.jpg" style="width: 95%">
+        <p>City Palace Hotel<br><b>Starting from $20</b></p>
+      </div>
+    </div>
+
+    <div class="hotel-col image-width">
+      <div class="hotel-container">
+        <div style="position:relative">
+          <img src="Hotelphotos/Ramada Hotel1.jpg" style="width: 95%">
+        </div>
+        <p>Ramada Hotel<br><b>Starting from $22</b></p>
+      </div>
+      <div class="hotel-container">
+        <img src="Hotelphotos/Golden Valley1.jpg" style="width: 95%">
+        <p>Golden Valley Hotel<br><b>Starting from $20</b></p>
+      </div>
+    </div>
+
+    <div class="hotel-col image-width">
+      <div class="hotel-container">
+        <img src="Hotelphotos/Wyndham1.jpg" style="width: 95%">
+        <p>Wyndham Tashkent<br><b>Starting from $35</b></p>
+      </div>
+      <div class="hotel-container">
+        <div style="position:relative">
+          <img src="Hotelphotos/Hotel HYATT Regency1.jpg" style="width: 95%">
+
+        </div>
+        <p>HYATT Regency<br><b>Starting from $115</b></p>
+      </div>
+    </div>
+
+    <div class="hotel-col image-width">
+      <div class="hotel-container">
+        <img src="Hotelphotos/Ichan Kala1.jpg" style="width: 95%">
+        <p>Ichan Kala Hotel<br><b>Starting from $20</b></p>
+      </div>
+      <div class="hotel-container">
+        <img src="Hotelphotos/Hotel Shodlik1.jpg" style="width: 95%">
+        <p>Hotel Shodlik<br><b>Starting from $15</b></p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

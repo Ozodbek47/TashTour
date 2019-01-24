@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<title>Taxi</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<head>
+
+<style>
+
+navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+
+	    .affix {
+  top: 0;
+  width: 100%;
+  z-index: 9999 !important;
+}
+.affix + .container-fluid {
+  padding-top: 70px;
+}
+
+a{text-decoration: none; color: black;}
+
+.hotel-container{content:"";display:table;clear:both}
+
+.hotel-content{margin-left:auto;margin-right:auto; max-width:980px}
+.hotel-topleft{position:absolute;left:0;top:0}
+.hotel-white-text{color:#fff}
+.hotel-grey-text{color:#757575}
+
+.hotel-button{color:#fff;background-color:#000; padding:8px 16px; overflow:hidden; text-decoration:none;text-align:center;}
+.hotel-button:hover{color:#000;background-color:#ccc}
+.text-to-disappear{}
+
+@media screen and (max-width: 580px)
+{
+.hotel-button{visibility: hidden;}
+.text-to-disappear{visibility: hidden;}
+}
+
+.hotel-row{content:""; display:table; clear:both}
+.image-grayscale{filter:grayscale(20%)}
+
+.hotel-col{float:left; width:100%}
+.image-width{width:25%}
+
+.carousel-inner img
+{
+width: 100%; /* Set width to 100% */
+margin: auto;
+min-height:200px;
+max-height:600px;
+}
+
+/* Hide the carousel text when the screen is less than 600 pixels wide */
+@media (max-width: 600px) {.carousel-caption {display: none;}}
+
+#pic {object-fit: cover; height: 550px; object-position: 50%;}
+
+#pic1 {object-fit: cover; height: 214px; object-position: 50%;}
+
+#pic2 {object-fit: cover; height: 125px; width: 225px; object-position: 0%;}
+
+.ButPos {position: absolute; top: 25px;}
+
+
+
+</style>
+
+</head>
+
+<body style="background-color: white">
+
+<!-- Top Heading -->
+<nav class="navbar navbar-default" data-spy="affix" data-offset-top="1" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">TashTour</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Accommodation.html">Accommodations</a></li>
+        <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Entertainment
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+            <li><a href="_museum.html">Museums</a></li>
+            <li><a href="_park.html">Parks</a></li>
+            <li><a href="_shop.html">Shops</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#">Restaurants & Cafes
+      <span class="caret"></span></a>
+      <ul class="dropdown-menu">
+		<li><a href="National.html">National</a></li>
+        <li><a href="FastFood.html">Fast Food</a></li>
+        <li><a href="CoffeeShop.html">Coffee Shops</a></li>
+        <li><a href="OR.html">Other</a></li>
+      </ul>
+    </li>
+    <li class="dropdown active">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Transport
+    <span class="caret"></span></a>
+    <ul class="dropdown-menu">
+      <li><a href="_bus.html">Bus</a></li>
+      <li><a href="_taxi.html">Taxi</a></li>
+      <li><a href="_sub.html">Underground</a></li>
+      <li><a href="_rail.html">Rail</a></li>
+      <li><a href="_air.html">Air</a></li>
+    </ul>
+  </li>
+        <li><a href="_tip.html">Useful Tips</a></li>
+      </ul>
+      <div class="nav navbar-nav navbar-right">
+        <a href="Travelers Quiz.html" target="_blank"><button class="btn btn-primary navbar-btn"><b>Travel Personality Quiz</b></button></a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div style="font-family: Montserrat, sans-serif;">
+<div class="pos-f-t">
+	<div class="container-fluid" style="border: 5px #343a40; border-style: none none solid none">
+		<header class="text-center my-0" style="font-size:48px">
+			<p class="text-dark">Taxis in Tashkent</p>
+		</header>
+	</div>
+</div>
+
+<div id="myCarousel" class="carousel slide mt-0" data-ride="carousel" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); position: relative">
+	<!-- Indicators -->
+	<ol class="carousel-indicators">
+		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		<li data-target="#myCarousel" data-slide-to="1"></li>
+		<li data-target="#myCarousel" data-slide-to="2"></li>
+		<li data-target="#myCarousel" data-slide-to="3"></li>
+	</ol>
+
+	<!-- Wrapper for slides -->
+	<div class="carousel-inner " role="listbox" >
+		<div class="item active">
+			<img id="pic" src="TaxiCover1.jpg" alt="Image">
+			<div class="carousel-caption" id="allhotels" >
+				<h3>Can Find One Any Time</h3>
+			</div>
+		</div>
+
+		<div class="item">
+			<img id="pic" src="TaxiCover2.jpg" alt="Image">
+			<div class="carousel-caption">
+				<h3>Special Taxi Apps Available</h3>
+			</div>
+		</div>
+
+		<div class="item">
+			<img id="pic" src="TaxiCover3.jpg" alt="Image">
+			<div class="carousel-caption">
+				<h3>Always Waiting To Offer Services</h3>
+			</div>
+		</div>
+
+		<div class="item">
+			<img id="pic" src="TaxiCover4.jpg" alt="Image">
+			<div class="carousel-caption">
+				<h3>And So Much More...</h3>
+			</div>
+		</div>
+	</div>
+
+	<!-- Left and right controls -->
+	<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+		<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		<span class="sr-only">Previous</span>
+	</a>
+	<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+		<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		<span class="sr-only">Next</span>
+	</a>
+
+	<!--The On-the-slides button and pic-->
+	<div class="hotel-topleft hotel-white-text ButPos" style="padding:14px 48px; z-value: 100">
+		<img src="_tash.jpg" alt="tashkent tourism" id="pic2" style="border-radius: 10px">
+		<h1 class="text-to-disappear" style="color:black"></h1><br>
+		<p><a href="#allhotels" class="hotel-button" style="font-size:18px; padding:12px 24px;">START TRAVELLING</a></p>
+	</div>
+</div>
+
+<div class="hotel-content" style="max-width:1200px">
+<div class="hotel-content" style="max-width:1500px">
+
+	<div class="container text-center" style="padding: 10px; object-fit: cover; width: 100%; height: 100%; object-position: 50%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)">
+		<h3 class="text-primary"><b>QIUCK DESCRIPTION</b></h3><br>
+		<div class="hotel-col image-width" >
+			<div class="hotel-container mb-4" >
+				<img id="pic1" src="Abro_photo\taxi\taxi1.jpg" style="width: 95%">
+			</div>
+		</div>
+		<div class="row">
+			<div class="hotel-col-sm-12 text-info">
+				<p align="left">
+				Taxi in Uzbekistan is a very popular kind of transport. It saves your time and carries with comfort. Taxi prices in Tashkent are rather cheap. You may pay just around 3.5 dollars to drive from one end of the capital to another.
+				Every car is a potential taxi in Tashkent, but essentially there are two forms: licensed cabs and ‘independent’ cabs. The former have little roof-mounted ‘taxi’ signs. The latter are just average cars driven by average dudes.
+
+				Independent taxis generally leave it up to you to pick the price, which is fine. As long as you don’t insult them with your offer, they will usually accept it. The minimum fare for a short hop is UZS 4000, but can be half this if there are other passengers in the cab already. Longer trips will cost UZS 5000 to UZS 8000: always agree a fare before you get into the car.
+
+				Licensed cabs – especially those waiting outside bars and hotels – are a different beast, so always agree a fare in advance and expect rates to be 50% higher.
+
+				Cab drivers tend not to know street names (and when they do, it's generally the Soviet-era ones), so use landmarks – big hotels and metro stations work best – to direct your driver to your destination.
+				<br>
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="container text-center" style="object-fit: cover; width: 100%; height: 100%; object-position: 50%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)">
+		<h3 class="text-primary"><b>APPLICATIONS</b></h3><br>
+		<div class="row">
+			<div class="col-sm-4">
+				<img id="pic1" style="width: 200px; height: 200px" src="Abro_photo/taxi/taxi3.png" class="mx-auto" alt="Image">
+				<div class="container text-center" style="object-fit: cover; width: 100%; height: 300px; object-position: 50%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)">
+				<h3 class="text-primary"><b>MY TAXI</b></h3><br>
+				<div class="well" align="center">
+					<i>Address: 39, Zarkaynar str., Shayhontohur dist., Tashkent, Uzbekistan</i><br>
+					<i>Phone: +998 71 202 15 15</i><br>
+					<i>Email: info@mytaxi.uz</i><br>
+					<i>Website:<a href="http://mytaxi.uz/eng/"> Visit now!</a></i><br>
+					<i>App link:<a href="https://play.google.com/store/apps/details?id=com.uznewmax.mytaxi"> Get it now!</a></i>
+				</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<img id="pic1" style="width: 200px; height: 200px" src="Abro_photo/taxi/taxi2.jpg" class="mx-auto" alt="Image">
+				<div class="container text-center" style="object-fit: cover; width: 100%; height: 300px; object-position: 50%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)">
+				<h3 class="text-primary"><b>YANDEX TAXI</b></h3><br>
+				<div class="well" align="center">
+					<i>Address: 24, Glinka str., Yakkasaray dist., Tashkent, Uzbekistan</i><br>
+					<i>Phone: +998 94 942 07 14</i><br>
+					<i>Email: driver.info@yandex.uz</i><br>
+					<i>Website:<a href="http://yapartner.uz/"> Visit now!</a></i><br>
+					<i>App link:<a href="https://play.google.com/store/apps/details?id=ru.yandex.taxi&hl=en"> Get it now!</a></i>
+				</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<img id="pic1" style="width: 200px; height: 200px" src="Abro_photo/taxi/taxi4.png" class="mx-auto" alt="Image">
+				<div class="container text-center" style="object-fit: cover; width: 100%; height: 300px; object-position: 50%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)">
+				<h3 class="text-primary"><b>TAXI MILLENNIUM</b></h3><br>
+				<div class="well" align="center">
+					<i>Address: 1, Niyozbek Yuli str., Yunusabad dist., Tashkent, Uzbekistan</i><br>
+					<i>Phone: +998 71 129 55 55</i><br>
+					<i>Telegram bot: <a href="https://t.me/Millenniumuzbot?fbclid=IwAR3fSFTxjJMzDYbBYzCQA64I_IVPujolpxjYmITtFXuLt_JdQFID6Yob6zU"> Talk now!</a></i><br>
+					<i>Facebook page:<a href="https://www.facebook.com/taximillenniumuz/?eid=ARC30QzOPg2ivwMM1I7ml3E8qXLKONZqcNvx2-vCdG0KkZotmnNQMaR8Vjaovl6r3XjWcDW81n0DmsTT"> Visit now!</a></i><br>
+					<i>App link:<a href="https://play.google.com/store/apps/details?referrer=utm_source%3Do%3A1932000000001&utm_medium=cpc&utm_campaign=estaxi&id=vezdetaxi.taxi.android"> Get it now!</a></i>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+</body>
+</html>

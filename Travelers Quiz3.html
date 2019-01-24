@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Travel Personality Quiz</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <style>
+
+
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+
+
+
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: green;
+      color: white;
+      padding: 5px;
+	  margin-bottom: 1%;
+    }
+
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;}
+    }
+
+    h4 {
+      color: black;
+    }
+
+	#pic {object-fit: cover; width: 100%; height: 100%; object-position: 50%; margin-top: 1%; border-radius: 7%;}
+  </style>
+</head>
+<body>
+<div class="container" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)">
+
+  <div class="row content">
+  <div class="col-lg-12 text-center">
+  <img id="pic" src="tashkentforpersonalities.jpg" draggable="false" align="center" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)">
+
+  </div>
+  </div>
+
+
+<div class="container-fluid text-center">
+  <div class="row content">
+
+    <div class="col-lg-12 text-center">
+      <h1 class="text-success">Tashkent Offers a Huge Range of Destinations for Each Type of Personalities</h1>
+      <hr>
+
+  <h2>Best Destinations by Personality Type</h2>
+  <p>Below you may find the Best Destinations for each of the six different travel personality types.</p>
+  <h3>Click on Your Personality Type to Find the Most Proper Destinations</h3>
+
+<div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+        <div class="panel-heading" style="background: #ff5c33;">
+        <h4>TOP 10 DESTINATIONS FOR TRADITIONALS</h4>
+      </div></a>
+      <div id="collapse1" class="panel-collapse collapse">
+        <div class="panel-body" align=left>
+          <!-- LIST -->
+          <ol class="text-info" style="font-size: 24px;">
+            <li>Independence Square</li>
+            <li>Khast Imam Complex</li>
+            <li>Minor Mosque</li>
+            <li>"Samarkand Darvoza" Mall</li>
+            <li>Amir Temur Square</li>
+            <li>Forum Palace</li>
+            <li>Mega Planet Complex</li>
+            <li>Madrasah of Barak-Khan</li>
+            <li>Chorsu Bazaar</li>
+            <li>Old City</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+      <div class="panel-heading" style="background: #ffa500;">
+        <h4>TOP 10 DESTINATIONS FOR SIGHTSEERS</h4>
+      </div></a>
+      <div id="collapse2" class="panel-collapse collapse">
+        <div class="panel-body" align=left>
+          <ol class="text-info" style="font-size: 24px;">
+          <li>Tashkent Metro</li>
+          <li>Applied Arts Museum</li>
+          <li>Minor Mosque</li>
+          <li>Ming Urik</li>
+          <li>Amir Temur Square</li>
+          <li>State Opera and Ballet Theatre</li>
+          <li>Mega Planet Complex</li>
+          <li>Independence Square</li>
+          <li>Chorsu Bazaar</li>
+          <li>Ak-tepa</li>
+        </ol>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+      <div class="panel-heading" style="background: #3cb371;">
+        <h4>TOP 10 DESTINATIONS FOR JOURNEYERS</h4>
+      </div></a>
+      <div id="collapse3" class="panel-collapse collapse">
+        <div class="panel-body" align=left>
+          <ol class="text-info" style="font-size: 24px;">
+          <li>Shashtepa</li>
+          <li>History Museum</li>
+          <li>Applied Arts Museum</li>
+          <li>Tashkent Metro</li>
+          <li>Ming Urik</li>
+          <li>Amir Temur Square</li>
+          <li>Aktepa Yunus-Abad</li>
+          <li>Independence Square</li>
+          <li>Quyluq Bazaar</li>
+          <li>Oybek Museum</li>
+        </ol>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+      <div class="panel-heading" style="background: #ee82ee;">
+        <h4>TOP 10 DESTINATIONS FOR VOYAGERS</h4>
+      </div></a>
+      <div id="collapse4" class="panel-collapse collapse">
+        <div class="panel-body" align=left>
+          <ol class="text-info" style="font-size: 24px;">
+          <li>Broadway</li>
+          <li>Memorial House Museum of Tamara Khanum</li>
+          <li>Shashtepa</li>
+          <li>Ming Urik</li>
+          <li>Amir Temur Square</li>
+          <li>Aktepa Yunus-Abad</li>
+          <li>History Museum</li>
+          <li>Independence Square</li>
+          <li>Ural Tansykbaev Museum</li>
+          <li>Sergey Yesenin Memorial House</li>
+        </ol>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
+      <div class="panel-heading" style="background: #6a5acd;">
+        <h4>TOP 10 DESTINATIONS FOR PIONEERS</h4>
+      </div></a>
+      <div id="collapse5" class="panel-collapse collapse">
+        <div class="panel-body" align=left>
+          <ol class="text-info" style="font-size: 24px;">
+          <li>Yunus Rajabiy house-museum</li>
+          <li>Chimgan Mountains</li>
+          <li>Memorial House Museum of Tamara Khanum</li>
+          <li>Ming Urik</li>
+          <li>Charvak Lake</li>
+          <li>Aktepa Yunus-Abad</li>
+          <li>History Museum</li>
+          <li>Oybek Museum</li>
+          <li>Ural Tansykbaev Museum</li>
+          <li>Sergeli District</li>
+        </ol>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">
+      <div class="panel-heading" style="background: #0080ff;">
+        <h4>TOP 10 DESTINATIONS FOR VENTURERS</h4>
+      </div></a>
+      <div id="collapse6" class="panel-collapse collapse">
+        <div class="panel-body" align=left>
+          <ol class="text-info" style="font-size: 24px;">
+          <li>Beldersay</li>
+          <li>Charvak reservoir</li>
+          <li>Military Museum</li>
+          <li>Shashtepa</li>
+          <li>Medicine Museum</li>
+          <li>Charvak Lake</li>
+          <li>Pyramids</li>
+          <li>Tein Shan Mountains</li>
+          <li>Chimgan Mountains</li>
+          <li>Sergey Yesenin Memorial House</li>
+        </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+    <div>
+      <h4><b>You are Done with Defining your Priorities. Next, Organize your Trip!</b></h4>
+      <p>or <a href="Travelers Quiz.html">(re)take the quiz</a></p>
+    </div>
+    </div>
+  </div>
+
+
+</div>
+
+
+
+<footer class="container-fluid text-center" style="border-radius: 10%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)">
+<div>
+  <ul class="pagination pagination-lg" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)">
+    <li class="page-item"><a class="page-link" href="Travelers Quiz2.html">Previous Step</a></li>
+    <li class="page-item"><a class="page-link" href="Travelers Quiz.html">1</a></li>
+    <li class="page-item"><a class="page-link" href="Travelers Quiz2.html">2</a></li>
+    <li class="page-item active"><a class="page-link">3</a></li>
+    <li class="page-item"><a class="page-link" href="index.html">Organize your Trip!</a></li>
+  </ul>
+</div>
+</footer>
+</div>
+</body>
+</html>

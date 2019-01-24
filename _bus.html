@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<title>Bus</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<head>
+
+<style>
+
+.navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+	}
+	.affix {
+	  top: 0;
+	  width: 100%;
+	  z-index: 9999 !important;
+	}
+	.affix + .container-fluid {
+	  padding-top: 70px;
+	}
+
+a{text-decoration: none; color: black;}
+
+.hotel-container{content:"";display:table;clear:both}
+
+.hotel-content{margin-left:auto;margin-right:auto; max-width:980px}
+.hotel-topleft{position:absolute;left:0;top:0}
+.hotel-white-text{color:#fff}
+.hotel-grey-text{color:#757575}
+
+.hotel-button{color:#fff;background-color:#000; padding:8px 16px; overflow:hidden; text-decoration:none;text-align:center;}
+.hotel-button:hover{color:#000;background-color:#ccc}
+.text-to-disappear{}
+
+@media screen and (max-width: 580px)
+{
+.hotel-button{visibility: hidden;}
+.text-to-disappear{visibility: hidden;}
+}
+
+.hotel-row{content:""; display:table; clear:both}
+.image-grayscale{filter:grayscale(20%)}
+
+.hotel-col{float:left; width:100%}
+.image-width{width:25%}
+
+.carousel-inner img
+{
+width: 100%; /* Set width to 100% */
+margin: auto;
+min-height:200px;
+max-height:600px;
+}
+
+/* Hide the carousel text when the screen is less than 600 pixels wide */
+@media (max-width: 600px) {.carousel-caption {display: none;}}
+
+#pic {object-fit: cover; height: 550px; object-position: 50%;}
+
+#pic1 {object-fit: cover; height: 214px; object-position: 50%;}
+
+#pic2 {object-fit: cover; height: 125px; width: 225px; object-position: 0%;}
+
+.ButPos {position: absolute; top: 25px;}
+
+
+
+</style>
+
+</head>
+
+<body style="background-color: white">
+
+<!-- Top Heading -->
+
+<nav class="navbar navbar-default" data-spy="affix" data-offset-top="1" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">TashTour</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Accommodation.html">Accommodations</a></li>
+        <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Entertainment
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+            <li><a href="_museum.html">Museums</a></li>
+            <li><a href="_park.html">Parks</a></li>
+            <li><a href="_shop.html">Shops</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#">Restaurants & Cafes
+      <span class="caret"></span></a>
+      <ul class="dropdown-menu">
+		<li><a href="National.html">National</a></li>
+        <li><a href="FastFood.html">Fast Food</a></li>
+        <li><a href="CoffeeShop.html">Coffee Shops</a></li>
+        <li><a href="OR.html">Other</a></li>
+      </ul>
+    </li>
+    <li class="dropdown active">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Transport
+    <span class="caret"></span></a>
+    <ul class="dropdown-menu">
+      <li><a href="_bus.html">Bus</a></li>
+      <li><a href="_taxi.html">Taxi</a></li>
+      <li><a href="_sub.html">Underground</a></li>
+      <li><a href="_rail.html">Rail</a></li>
+      <li><a href="_air.html">Air</a></li>
+    </ul>
+  </li>
+        <li><a href="_tip.html">Useful Tips</a></li>
+      </ul>
+      <div class="nav navbar-nav navbar-right">
+        <a href="Travelers Quiz.html" target="_blank"><button class="btn btn-primary navbar-btn"><b>Travel Personality Quiz</b></button></a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div style="font-family: Montserrat, sans-serif;">
+
+<div class="pos-f-t">
+	<nav style="border: 5px #343a40; border-style: none none solid none">
+		<header class="text-center my-0" style="font-size:48px">
+			<p class="text-dark">Buses in Tashkent</p>
+		</header>
+	</nav>
+</div>
+
+
+<div id="myCarousel" class="carousel slide mt-0" data-ride="carousel" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); position: relative">
+	<!-- Indicators -->
+	<ol class="carousel-indicators">
+		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		<li data-target="#myCarousel" data-slide-to="1"></li>
+		<li data-target="#myCarousel" data-slide-to="2"></li>
+		<li data-target="#myCarousel" data-slide-to="3"></li>
+	</ol>
+
+	<!-- Wrapper for slides -->
+	<div class="carousel-inner " role="listbox">
+		<div class="item active">
+			<img id="pic" src="BusCover4.jpg" alt="Image">
+			<div class="carousel-caption" id="allhotels" >
+				<h3>Affordable And Convenient</h3>
+			</div>
+		</div>
+
+		<div class="item">
+			<img id="pic" src="BusCover1.jpg" alt="Image">
+			<div class="carousel-caption">
+				<h3>Abundance Of Stations</h3>
+			</div>
+		</div>
+
+		<div class="item">
+			<img id="pic" src="BusCover2.jpg" alt="Image">
+			<div class="carousel-caption">
+				<h3>Modern Vehicles</h3>
+			</div>
+		</div>
+
+		<div class="item">
+			<img id="pic" src="BusCover3.jpg" alt="Image">
+			<div class="carousel-caption">
+				<h3>And So Much More...</h3>
+			</div>
+		</div>
+	</div>
+
+	<!-- Left and right controls -->
+	<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+		<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		<span class="sr-only">Previous</span>
+	</a>
+	<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+		<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		<span class="sr-only">Next</span>
+	</a>
+
+	<!--The On-the-slides button and pic-->
+	<div class="hotel-topleft hotel-white-text ButPos" style="padding:14px 48px; z-value: 100">
+		<img src="_tash.jpg" alt="tashkent tourism" id="pic2" style="border-radius: 10px">
+		<h1 class="text-to-disappear" style="color:black"></h1><br>
+		<p><a href="#allhotels" class="hotel-button" style="font-size:18px; padding:12px 24px;">START TRAVELLING</a></p>
+	</div>
+</div>
+
+<div class="hotel-content" style="max-width:1200px">
+<div class="hotel-content" style="max-width:1500px">
+
+	<div class="container text-center" style="padding: 5px; object-fit: cover; width: 100%; height: 100%; object-position: 50%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)">
+		<h3 class="text-primary"><b>QIUCK DESCRIPTION</b></h3><br>
+		<div class="hotel-col image-width" >
+			<div class="hotel-container mb-4" >
+				<img id="pic1" src="Abro_photo\bus\bus1.jpg" style="width: 95%">
+			</div>
+		</div>
+		<div class="row">
+			<div class="hotel-col-sm-12 text-info">
+				<p align="left">
+				Getting around the city is quite convenient in Tashkent’s modern buses, which go almost everywhere. There are also the newly launched city excursion double-decker buses. Privately-run Daewoo minibuses are available outside the bus station, and they provide better services in terms of speed and frequency.
+				The busses arrive to the station quite frequently and the bus tickets do vary with distance, making buses very economical for long distance travellers.
+				Compared to come other means of transportation available in Uzbekistan, buses can get to any point in the city.
+				Modern buses a re equipped with TVs, cushioned seats, and alert buttons to improve the traveller's experience. The type of vehicles range from Mercedez-Benz to MAN. The bus drivers a re very friendly and are always reay to help you get to your destination.
+				<br>
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="container text-center" style="object-fit: cover; width: 100%; height: 500px; object-position: 50%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)">
+		<h3 class="text-primary"><b>ROUTES</b></h3><br>
+		<div >
+			<iframe style="width: 100%; height: 400px" src="https://wikiroutes.info/en/tashkent"></iframe>
+		</div>
+	</div>
+
+	<div class="container text-center" style="object-fit: cover; width: 100%; height: 100%; object-position: 50%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)">
+		<h3 class="text-primary"><b>USEFUL INFO</b></h3><br>
+		<div class="well" align="center">
+			<i>Cost: UZS 1200 per passenger</i><br>
+			<i>Phone: +998 71 233-52-63</i><br>
+			<i>Address: 6, Amir Timur str., Tashkent city, Uzbekistan</i><br>
+			<i>Email: info@tshtx.uz</i><br>
+			<i>Website:<a href="http://tshtx.uz/index.php?lang=ru"> Visit now</a></i><br>
+			<i>Q&A group:<a href="https://telegram.me/uzroutes"> Join Telegram chat</a></i><br>
+			<i>Renting tour buses:<a href="http://www.citybus.uz/"> Option#1 </a><a href="http://www.silkroadbus.com/en">Option#2</a></i><br>
+			<i>Working time: Mon-Fri from 8AM to 5PM, Luch Break from 12PM to 1PM</i>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+</body>
+</html>

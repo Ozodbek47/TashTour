@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<title>Culture</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<head>
+
+<style>
+
+navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+
+	    .affix {
+  top: 0;
+  width: 100%;
+  z-index: 9999 !important;
+}
+.affix + .container-fluid {
+  padding-top: 70px;
+}
+
+a{text-decoration: none; color: black;}
+
+.hotel-container{content:"";display:table;clear:both}
+
+.hotel-content{margin-left:auto;margin-right:auto; max-width:980px}
+.hotel-topleft{position:absolute;left:0;top:0}
+.hotel-white-text{color:#fff}
+.hotel-grey-text{color:#757575}
+
+.hotel-button{color:#fff;background-color:#000; padding:8px 16px; overflow:hidden; text-decoration:none;text-align:center;}
+.hotel-button:hover{color:#000;background-color:#ccc}
+.text-to-disappear{}
+
+@media screen and (max-width: 580px)
+{
+.hotel-button{visibility: hidden;}
+.text-to-disappear{visibility: hidden;}
+}
+
+.hotel-row{content:""; display:table; clear:both}
+.image-grayscale{filter:grayscale(20%)}
+
+.hotel-col{float:left; width:100%}
+.image-width{width:25%}
+
+.carousel-inner img
+{
+width: 100%; /* Set width to 100% */
+margin: auto;
+min-height:200px;
+max-height:600px;
+}
+
+/* Hide the carousel text when the screen is less than 600 pixels wide */
+@media (max-width: 600px) {.carousel-caption {display: none;}}
+
+#pic {object-fit: cover; height: 550px; object-position: 50%;}
+
+#pic1 {object-fit: cover; height: 214px; object-position: 50%;}
+
+#pic2 {object-fit: cover; height: 125px; width: 225px; object-position: 0%;}
+
+.ButPos {position: absolute; top: 25px;}
+
+#back {background-image: url("Abro_photo\cult\cult2.jpg"); background-repeat: repeat-y; background-position: top;}
+
+</style>
+
+</head>
+
+<body style="background-color: white" id="up">
+
+<!-- Top Heading -->
+<nav class="navbar navbar-default" data-spy="affix" data-offset-top="1" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">TashTour</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="Accommodation.html">Accommodations</a></li>
+        <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Entertainment
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+            <li><a href="_museum.html">Museums</a></li>
+            <li><a href="_park.html">Parks</a></li>
+            <li><a href="_shop.html">Shops</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#">Restaurants & Cafes
+      <span class="caret"></span></a>
+      <ul class="dropdown-menu">
+		<li><a href="National.html">National</a></li>
+        <li><a href="FastFood.html">Fast Food</a></li>
+        <li><a href="CoffeeShop.html">Coffee Shops</a></li>
+        <li><a href="OR.html">Other</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Transport
+    <span class="caret"></span></a>
+    <ul class="dropdown-menu">
+      <li><a href="_bus.html">Bus</a></li>
+      <li><a href="_taxi.html">Taxi</a></li>
+      <li><a href="_sub.html">Underground</a></li>
+      <li><a href="_rail.html">Rail</a></li>
+      <li><a href="_air.html">Air</a></li>
+    </ul>
+  </li>
+        <li><a href="_tip.html">Useful Tips</a></li>
+      </ul>
+      <div class="nav navbar-nav navbar-right">
+        <a href="Travelers Quiz.html" target="_blank"><button class="btn btn-primary navbar-btn"><b>Travel Personality Quiz</b></button></a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div style="font-family: Montserrat, sans-serif;">
+
+<div class="pos-f-t">
+	<nav style="border: 5px #343a40; border-style: none none solid none">
+		<header class="text-center my-0" style="font-size:48px">
+			<p class="text-dark">Uzbekistan's Culture</p>
+		</header>
+	</nav>
+</div>
+
+<div class="text-center" id="back" style="object-fit: cover; width: 100%; height: 200pxpx; object-position: 50%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)">
+		<div >
+			<img class="mx-auto" style="object-fit: cover; width:100%; height: 200pxpx;" src="Abro_photo\cult\cult3.gif" alt="flag">
+		</div>
+</div>
+
+<div class="hotel-content" style="max-width:1200px">
+<div class="hotel-content" style="max-width:1500px">
+
+	<div class="container text-center" style="object-fit: cover; width: 100%; height: 100%; object-position: 50%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)">
+		<h3><b>OVERVIEW</b></h3><br>
+		<div class="row">
+			<div class="col-sm-4">
+				<img src="Abro_photo\cult\cult1.png" class="img-responsive" style="width:100%; margin-top: 45px" alt="Image">
+			</div>
+			<div class="col-sm-8">
+			<div class="well" style="max-width: 700px;">
+				<ul align="left">
+					<li>Capital and largest city: Tashkent</li>
+					<li>Official languages: Uzbek, Russian </li>
+					<li>Ethnic groups: 83.8% Uzbek, 4.8% Tajik, 2.5% Kazakh, 2.3% Russian, 2.2% Karakalpak, 4.5% others</li>
+					<li>Religion: 88.5% Muslims, 9.4% Christians, 0.1% Zoroastrian, 2.0% non religious and others</li>
+					<li>Government: Unitary presidential constitutional republic under an authoritarian state</li>
+					<li>Area: 448,978 km2</li>
+					<li>Population: 32,979,000</li>
+					<li>Currency: Uzbek som (UZS)</li>
+					<li>Time zone: UTC+5 (UZT)</li>
+					<li>Calling code: +998</li>
+				</ul>
+			</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container text-center" style="object-fit: cover; width: 100%; height: 100%; object-position: 50%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)">
+		<h3><b>HISTORY</b></h3><br>
+		<div class="row">
+			<div class="col-sm-4">
+				<img src="Abro_photo\cult\cult4.jpg" class="img-responsive" style="object-fit: cover; width:100%; height: 390px" alt="Image">
+			</div>
+			<div class="col-sm-8">
+				<div class="well" style="max-width: 700px;">
+					<p><b>Uzbeks likely take their name from a khan. A leader of the Golden Horde in the fourteenth century was named Uzbek, though he did not rule over the people who would share his name.
+
+					Modern Uzbeks hail not only from the Turkic-Mongol nomads who first claimed the name, but also from other Turkic and Persian peoples living inside the country's borders. The Soviets, in an effort to divide the Turkic people into more easily governable subdivisions, labeled Turks, Tajiks, Sarts, Qipchaqs, Khojas, and others as Uzbek, doubling the size of the ethnicity to four million in 1924.
+
+					Today the government is strengthening the Uzbek group identity, to prevent the splintering seen in other multiethnic states. Some people have assimilated with seemingly little concern. Many Tajiks consider themselves Uzbek, though they retain the Tajik language; this may be because they have long shared an urban lifestyle, which was more of a bond than ethnic labels. Others have been more resistant to Uzbekization. Many Qipchaqs eschew intermarriage, live a nomadic lifestyle, and identify more closely with the Kyrgyz who live across the border from them. The Khojas also avoid intermarriage, and despite speaking several languages, have retained a sense of unity.
+
+					The Karakalpaks, who live in the desert south of the Aral Sea, have a separate language and tradition more akin to Kazakh than Uzbek. Under the Soviet Union, theirs was a separate republic, and it remains autonomous.
+					</b></p>
+				</div>
+			</div>
+		</div>
+	</div>
+<div class="container text-center" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)">
+	<div class="container text-center" style="object-fit: cover; width: 100%; height: 100%; object-position: 50%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)">
+		<h3><b>GEOGRAPHY</b></h3><br>
+		<div class="row">
+			<div class="col-sm-12" align="center">
+				<img id="pic1" src="Abro_photo/cult\cult5.jpg" class="img-responsive" alt="Image">
+			</div>
+			<br><br><br><br><br><br><br><br><br><br><br><br>
+			<div class="well">
+			<p><b>The Republic of Uzbekistan is located between the rivers Amu Darya and Syr Darya.The length of the territory from west to east is 1,425 kilometers and from north to south - 930 km.
+
+			The northernmost point of Uzbekistan is the Ustyurt plateau, near the western shore of the Aral Sea (45o36 'N latitude), the southernmost point is in the Surkhandarya region, near the town of Termez (37o11' N latitude), the westernmost point - on the Ustyurt plateau (56o east longitude), the easternmost point - in the Ferghana valley, on the border with Kyrgyzstan.
+
+			In the north-eastern the republic borders with Kazakhstan, on the east and southeast - with Kyrgyzstan and Tajikistan in the west - with Turkmenistan, in the south - with Afghanistan. The total length is 6,221 km of borders. Among them: the border with Kazakhstan is 2,203 km, Kyrgyzstan - 1099 km, 1161 km with Tajikistan, Turkmenistan and Afghanistan -1621 -137 miles, correspondently.
+
+			The territory of Uzbekistan is a peculiar combination of flat and steep terrain. The plains are located on the south-west and north-west and consist of Ustyurt, the Amu-Darya delta and the Kyzyl-Kum desert. In central and south-western part of the desert are quite large mountain hill. Mountains and foothills, occupying about a third of the republic, are in the east and south-east, where the interlock with the powerful mountain formations in Kyrgyzstan and Tajikistan. The highest point of the mountains of the republic is 4,643 m.
+
+			Between the mountains there are valleys and plains. The largest valley is Ferghana. It stretches over 370 km. Its width reaches 190 kilometers.The valley is surrounded by mountains from three sides and only from the West it is open.
+
+			For the natural conditions of the republic is characterized by high seismicity, there are known facts, when the tremors reached eight or nine points. In particular, a destructive earthquakes took place in Tashkent on 26 April 1966.
+
+			The largest rivers of both Uzbekistan and throughout Central Asia are Amu-Darya and Syr-Darya. The total length of the Amu-Darya River is 1437 km, and Syr-Darya river - 2137 km. Syr-Darya, exceeding Amu-Darya by length, is less by water content.</b></p>
+			</div>
+		</div>
+		</div>
+	</div>
+</div>
+	<div class="container text-center" style="object-fit: cover; width: 100%; height: 100%; object-position: 50%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)">
+		<h3><b>RELIGION</b></h3><br>
+		<div class="row">
+			<div class="col-sm-8 mt-2 mb-2">
+				<div class="well" style="max-width: 700px;">
+					<p><b>As a secular state with a Muslim majority, where different faiths live side-by-side, engaging one another in peace, tranquility, and respect, Uzbekistan prides itself on its centuries-long traditions of tolerance and inter-religious harmony.
+
+					Many have identified the country’s ethnic diversity and religious harmony as a legacy of the Silk Road, which served as a melting pot of civilizations and cultures.
+
+					Throughout the centuries, the territory of today’s Uzbekistan has been a home for well-known scholars and theologians like the 9th century Imam Bukhari and Imam Maturidi, and the 14th century Baha Uddin al-Naqshbandi who were critical to defining the humanistic essence of Islam, which calls for kindness, peace, and tolerance.
+
+					Enjoying this article? Click here to subscribe for full access. Just $5 a month.
+					Uzbekistan is also a land with ancient roots of Christianity, as the Nestorian Church brought the faith to Central Asia from northern Iraq.
+
+					Saint Daniel’s purported fifth century gravesite in Samarkand – which has long been a pilgrimage site for common worship among Muslims, Christians, and Jews – best symbolizes the spirit of religious accord in Uzbekistan.
+
+					Today, our country is confidently presenting an Uzbek model of a secular state in which the moderate and enlightened practices and teachings of  Islam and many other religions and faiths are able to flourish. Uzbek’s society of tolerance includes more than 140 nationalities, as well as 16 religious denominations – including Orthodox, Catholic, Lutheran, Baptist, Full Gospel, Adventist, and other Christian churches, as well as religious communities of Bukhara and European Jews, Baha’is, Krishnas, Buddhists, and others — over 2,200 resulting religious organizations.
+
+					In Uzbekistan people of all nationalities and confessions often celebrate the different holy days together, including Ramadan, Easter, Pesach, Purim, Hanukkah, and others. They also make pilgrimages to the holy places of their faith in Saudi Arabia, Russia, Greece, and Israel.
+
+					Social hostilities or disagreements involving religion are almost non-existent in Uzbekistan.
+					</b></p>
+				</div>
+			</div>
+			<div class="col-sm-4 mb-5 ">
+				<img src="Abro_photo\cult\cult6.jpg" class="img-responsive" style="border-radius: 5px; object-fit: cover; width:100%; height: 250px" alt="Image">
+				<br>
+				<img src="Abro_photo\cult\cult7.jpg" class="img-responsive" style="border-radius: 5px; object-fit: cover; width:100%; height: 250px" alt="Image">
+			</div>
+		</div>
+	</div>
+
+	<div class="container text-center" style="object-fit: cover; width: 100%; height: 100%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)">
+		<h3 class="text-primary"><b>HOLIDAYS</b></h3><br>
+		<div class=" row">
+				<div class="container" style="padding: 15px; object-fit: cover; width: 90%; height: auto; object-position: 50%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); position: relative">
+				<h4 class="text-primary" align="lrft"><b>The New Year’s Day</b></h4><br>
+				<div class="col-sm-4">
+				<img src="Abro_photo\cult\cult8.png" class="img-responsive" style="border-radius: 5px; object-fit: cover; width:300px; height: 200px" alt="Image">
+				<br>
+				<img src="Abro_photo\cult\cult9.jpg" class="img-responsive" style="border-radius: 5px; object-fit: cover; width:300px; height: 200px" alt="Image">
+				</div>
+				<div class="col-sm-8">
+				<div class="well" style="max-width: 700px;">
+				<h4 class="text-dark mx-auto"><b>1st of January</b></h4>
+				<p>The New Year’s Day for citizens of Uzbekistan is one of the most favorite and long-awaited holiday. As a rule, at these magic days everyone expects a heavy snowfall which is not always happened in this dry region. But if on the New Year’s Day everything is covered with flurry snow, you may consider that holiday is the most possible: with crispy snow, pine fragrance, spicy smell of aspic, stood on the frost, making snowman and sledging...
+
+				This large international holiday comes into every family and of course is widely celebrated on national basis. The favorite of all kids and the symbol of the holiday, the green New-Year tree, appears on the main square of the capital, flashing with lights of garlands and balls. Young people gather here to hear the magical midnight striking of Tashkent chiming clock. And next days the square becomes the main center of public festivities. Especially kids enjoy, because here they are waiting for a Grandfather Frost and Snow Maiden, as well as many other characters of favorite books and cartoons. Another children's entertainment center is a square near the city circus, where the plenty of rides, tents with toys and sweets are set, clowns and acrobats amuse kids.
+
+				Leisure time for adults is not less interesting and various. At these days theaters show wonderful festive performances, cinemas, cafes, clubs and restaurants are crowded. Every public house tries to excel with its original show program: performances of pop stars, funny contests and raffles, and certainly an outstanding New-Year disco party.</p>
+				</div>
+				</div>
+				</div>
+
+				<div class="container" style="padding: 15px; object-fit: cover; width: 90%; height: auto; object-position: 50%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); position: relative">
+				<h4 class="text-primary" align="lrft"><b>Day of Defenders of the Motherland</b></h4><br>
+				<div class="col-sm-8">
+				<div class="well" style="max-width: 700px;">
+				<h4 class="text-dark mx-auto"><b>14th of February</b></h4>
+				<p>All men of Uzbekistan are celebrated on this day. Because initially every man is the defender of his honor, home and Motherland…
+
+				But particularly warm words sound at this holiday about military men, for whom the 14th of January (the day, when Armed Forces of Uzbekistan were established) is the professional holiday. The Day of defenders of Motherland is the great state holiday and it is observed in broad and spectacular way. This day the ranks of military men in full dress are lined up on the main square of the country in order to accept congratulations and awards from the leader of the country.
+
+				The representatives of the Ministry of Defense, Ministry of Internal Affairs, National Security Service and other institutions participate in this ceremony. The moment, when the marching of all force divisions begins along the square to the sound of military orchestra, is particularly colorful. Participants of the parade also lay the wreaths to the monument of Independence.</p>
+				</div>
+				</div>
+				<div class="col-sm-4">
+				<img src="Abro_photo\cult\cult10.jpg" class="img-responsive" style="border-radius: 5px; object-fit: cover; width:300px; height: 200px" alt="Image">
+				<br>
+				<img src="Abro_photo\cult\cult11.jpg" class="img-responsive" style="border-radius: 5px; object-fit: cover; width:300px; height: 200px" alt="Image">
+				</div>
+				</div>
+
+				<div class="container" style="padding: 15px; object-fit: cover; width: 90%; height: auto; object-position: 50%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); position: relative">
+				<h4 class="text-primary" align="lrft"><b>International Women's Day</b></h4><br>
+				<div class="col-sm-4">
+				<img src="Abro_photo\cult\cult12.jpg" class="img-responsive" style="border-radius: 5px; object-fit: cover; width:300px; height: 200px" alt="Image">
+				<br>
+				<img src="Abro_photo\cult\cult13.jpg" class="img-responsive" style="border-radius: 5px; object-fit: cover; width:300px; height: 200px" alt="Image">
+				</div>
+				<div class="col-sm-8">
+				<div class="well align-middle" style="max-width: 700px;">
+				<h4 class="text-dark mx-auto"><b>8th of March</b></h4>
+				<p>If in Russia in the early spring it is still snowy and frosty, then in Uzbekistan the 8th of March falls on nice and wonderful time, when the nature is finally awoke, revived and blossomed out with all colors, filling everything round with delightful scent. It is so resemble with wonderful image of a woman!
+
+				That is why at this holiday men with particular inspiration congratulate their beloved women: wives, friends, mothers, sisters, daughters and colleagues… “Armed” with flowers, champagnes and gifts (which they have been selecting in agony the whole previous week), they hurry to celebrate this event with their family, friends and colleagues.
+
+				And what is about beautiful ladies? On this day they are the heroines of a feast: fine toasts, poems, songs and dances are devoted to them. Especially the atmosphere of the holiday is perceptible in the capital. On the largest stage of the country, Istiklol Palace, the annual concert in honor of women is held with the participation of local pop stars. Greetings about beautiful ladies are heard from every stage of the capital: whether a night club or theatre. Usually premiers and performances of invited foreign pop stars are timed to this day.
+
+				Winter scheduled tours in Uzbekistan 2019</p>
+				</div>
+				</div>
+				</div>
+
+				<div class="container" style="padding: 15px; object-fit: cover; width: 90%; height: auto; object-position: 50%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); position: relative">
+				<h4 class="text-primary" align="lrft"><b>Navruz Holiday</b></h4><br>
+				<div class="col-sm-8">
+				<div class="well" style="max-width: 700px;">
+				<h4 class="text-dark mx-auto"><b>21st of March</b></h4>
+				<p>Navruz is one of the most treasured holidays in Uzbekistan. Sometimes known as Persian New Year, Navruz is a chance to celebrate nature, to welcome a new year, and to enjoy flavorful food with friends, neighbors, and family. The most famous of Navruz dish is sumalak, made from germinated grains and stirred for a whole day by the women of the neighborhood.
+
+				Navruz originated in Khorasan, in northeastern Iran, about 3000 years ago. Navruz is celebrated on the spring equinox, which is usually March 21. Also known as Nowruz, the holiday is celebrated across Western Asia and Central Asia, all the way to the Black Sea and the Balkans.
+
+				Navruz in UzbekistanNavruz in UzbekistanNavruz in Uzbekistan
+				Though many people celebrate Navruz as a secular holiday, it is a religious holiday for Zoroastrians. The holiday celebrates the day in the spring when day and night are equal, and is the start of a new year. Traditionally, people forgive their enemies, make amends, help the poor, and cleanse their houses and consciences for a good start to a new year.
+
+				Sumalak (also known as samanu) is one of the main attractions on Navruz. Sumalak is made from germinated wheat, and takes a whole night to cook. Women from the mahalla (neighborhood) gather around the pot to sing and stir, so that the sumalak doesn’t burn. In the morning, the warm sumalak is handed out to neighbors, relatives and friends. With the first taste of sumalak, you should make a wish.
+
+				Navruz in UzbekistanNavruz in UzbekistanNavruz in Uzbekistan
+				Tables are laid with plenty of food, including samsa and plov, plus nishalda, a sweet dessert of whipped egg whites, and sugar. People pay visits and welcome guests, using Navruz as a time to share what they have with others. Horse games and sporting competitions are also popular, as are fairs with traditional dishes and souvenirs.</p>
+				</div>
+				</div>
+				<div class="col-sm-4">
+				<img src="Abro_photo\cult\cult14.jpg" class="img-responsive" style="border-radius: 5px; object-fit: cover; width:300px; height: 200px" alt="Image">
+				<br>
+				<img src="Abro_photo\cult\cult15.png" class="img-responsive" style="border-radius: 5px; object-fit: cover; width:300px; height: 200px" alt="Image">
+				</div>
+				</div>
+
+				<div class="container well">
+				<a href="#up" style="text-decoration: none;"><button type="button" class="btn btn-primary btn-lg btn-block">BACK UP</button></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
